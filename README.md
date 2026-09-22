@@ -50,7 +50,7 @@ The results are written to:
   - `results/summary/phi.csv` gives the signed tail probabilities for $\Phi$
   - `results/summary/r.csv` gives the signed tail probabilities for $R$
  
-## Best practices
+## Best practice
 
 - The number of phylogenetic dimensions retained (--k-dims) should balance faithful representation of the tree-derived covariance structure against computational cost. The tool reports the cumulative variance explained by the retained dimensions in the terminal. For publishable analyses, we recommend retaining enough dimensions to explain at least 99% of the variance.
 - To that end, we also recommend `--warmup 5000 --samples 5000` as a minimum. You can inspect MCMC convergence using the files in `results/raw/`.
