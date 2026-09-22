@@ -1,6 +1,6 @@
 # plasmid-model-cli
 
-This tool runs the plasmid-host dynamics model in [Matlock and MacLean (2026)](https://doi.org/10.64898/2026.02.19.706745). If you use the tool, please cite:
+This tool runs the host-plasmid and plasmid-plasmid dynamics model in [Matlock and MacLean (2026)](https://doi.org/10.64898/2026.02.19.706745). If you use the tool, please cite:
 
 ```
 @article{matlock2026conjugation,
@@ -19,7 +19,7 @@ All you need is a host chromosomal tree (as a `.nwk`), and a presence/absence ma
 
 ## Quick start with Docker
 
-From repo root:
+From the repository root:
 
 ```bash
 docker build -t plasmid-model-cli --build-arg STAN_MODEL=stan/model.stan .
