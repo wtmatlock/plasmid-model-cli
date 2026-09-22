@@ -1,0 +1,18 @@
+/target
+.DS_Store
+stan/model
+# Python
+*.py
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# R
+*.R
+.Rhistory
+.Rdata
+.Ruserdata
+
+# Results
+/results/

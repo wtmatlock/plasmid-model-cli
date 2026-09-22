@@ -1,0 +1,13 @@
+.git
+.gitignore
+target
+stan/model
+**/__pycache__/
+**/*.py
+**/*.R
+**/.Rhistory
+**/.RData
+**/.venv
+**/venv
+**/.mypy_cache
+**/.pytest_cache
