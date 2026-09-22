@@ -58,3 +58,6 @@ The results are written to:
 
 - The number of phylogenetic dimensions retained (`--k-dims`) should balance faithful representation of the tree-derived covariance structure against computational cost. The tool reports the cumulative variance explained by the retained dimensions in the terminal. For publishable analyses, we recommend retaining enough dimensions to explain at least 99% of the variance.
 - To that end, we also recommend `--warmup 5000 --samples 5000` as a minimum. You can inspect MCMC convergence using the files in `results/raw/`.
+ 
+## Confessional 
+Rust is a new (and exciting) language for me. I used GitHub Copilot to help cobble an initial CLI together, but after several unassisted iterations, I am confident it's doing the job. If you spot any weirdness, let me know. My preference is to run Stan models in R, as I did for the paper.
