@@ -74,7 +74,7 @@ The results are written to:
 ## Tips and best practice
 
 - The model uses the host tree primarily as a measure of host relatedness. However, your input tree should be rooted, so it can be converted into a phylogenetic covariance matrix. In practice, this isn't always possible, and in my experience, it's fine to midpoint root.
-- The number of phylogenetic dimensions retained (`--k-dims`) should balance faithful representation of the tree-derived covariance structure against computational cost. The tool reports the cumulative variance explained by the retained dimensions in the terminal. For publishable analyses, we recommend retaining enough dimensions to explain at least 99% of the variance (this value is printed to the terminal when you run).
+- The number of phylogenetic dimensions retained (`--k-dims`) should balance faithful representation of the tree-derived covariance structure against computational cost. The tool reports the cumulative variance explained by the retained dimensions in the terminal. For publishable analyses, we recommend retaining enough dimensions to explain at least 99% of the variance (this value is also printed to the terminal).
 - To that end, we also recommend `--warmup 5000 --samples 5000` as a minimum. You can inspect MCMC convergence using the files in `results/raw/`.
 
 ## Confessional 
