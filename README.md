@@ -22,21 +22,9 @@ All you need is a host chromosomal tree (as a `.nwk`), and a presence/absence ma
 From the repository root:
 
 ```bash
-docker build -t plasmid-model-cli --build-arg STAN_MODEL=stan/model.stan .
-```
-
-This will compile:
-
-- CmdStan
-- Stan model executable (`stan/model.stan` to `stan/model`)
-- Rust CLI binary
-
-You can then test with the bundled data:
-
-```bash
 docker run --rm -it \
   -v "$PWD:/work" \
-  plasmid-model-cli \
+  wtmatlock/plasmid-model-cli:latest \
   --matrix /work/test_data/test_matrix.csv \
   --tree /work/test_data/test_tree.nwk \
   --out-dir /work/results \
@@ -56,8 +44,9 @@ The results are written to:
  
 ## Best practice
 
-- The number of phylogenetic dimensions retained (`--k-dims`) should balance faithful representation of the tree-derived covariance structure against computational cost. The tool reports the cumulative variance explained by the retained dimensions in the terminal. For publishable analyses, we recommend retaining enough dimensions to explain at least 99% of the variance.
+- The number of phylogenetic dimensions retained (`--k-dims`) should balance faithful representation of the tree-derived covariance structure against computational cost. The tool reports the cumulative variance explained by the retained dimensions in the terminal. For publishable analyses, we recommend retaining enough dimensions to explain at least 99% of the variance (this value is printed to the terminal when you run).
 - To that end, we also recommend `--warmup 5000 --samples 5000` as a minimum. You can inspect MCMC convergence using the files in `results/raw/`.
- 
+
+
 ## Confessional 
 Rust is a new (and exciting) language for me. I used GitHub Copilot to help cobble an initial CLI together, but after several unassisted iterations, I am confident it's doing the job. If you spot any weirdness, let me know. My preference is to run Stan models in R, as I did for the paper.
