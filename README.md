@@ -13,7 +13,7 @@ This tool runs the host-plasmid and plasmid-plasmid dynamics model in [Matlock a
 }
 ```
 
-All you need is a host chromosomal tree (as a `.nwk`), and a presence/absence matrix of plasmid groups (formatted like `test_data/test_matrix.csv`). Please refer to the manuscript for interpretation of the outputs.
+All you need is a host chromosomal tree (as a `.nwk`), and a presence/absence matrix of plasmid groups (formatted like `test_data/test_matrix.csv`). Please refer to the paper for interpretation of the outputs.
 
 > Of course, you could use any tree and any binary traits!
 
@@ -78,4 +78,4 @@ The results are written to:
 
 
 ## Confessional 
-Rust is a new (and exciting) language for me. I used GitHub Copilot to help cobble an initial CLI together, but after several unassisted iterations, I am confident it's doing the job. If you spot any weirdness, let me know. My preference is to run Stan models in R, as I did for the paper.
+Rust is a new (and exciting) language for me. I used GitHub Copilot to help cobble together an initial CLI, but after several unassisted iterations, I am confident it's doing the job. If you spot any weirdness, please let me know. My preference is to run Stan models in R, as I did for the paper.
