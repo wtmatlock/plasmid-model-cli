@@ -1,6 +1,6 @@
 # plasmid-model-cli
 
-[![Docker Image Version](https://img.shields.io/docker/v/wtmatlock/plasmid-model-cli?sort=semver&arch=amd64)](https://hub.docker.com/r/wtmatlock/plasmid-model-cli)
+[![Docker](https://img.shields.io/docker/v/wtmatlock/plasmid-model-cli?sort=semver&label=Docker&logo=docker)](https://hub.docker.com/r/wtmatlock/plasmid-model-cli) [![License](https://img.shields.io/github/license/wtmatlock/plasmid-model-cli)](https://github.com/wtmatlock/plasmid-model-cli/blob/main/LICENSE)
 
 This tool runs the host-plasmid and plasmid-plasmid dynamics model in [Matlock and MacLean (2026)](https://doi.org/10.64898/2026.02.19.706745). If you use the tool, please cite:
 
