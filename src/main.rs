@@ -373,6 +373,33 @@ fn main() {
         ))
     );
 
+    let target = 0.99;
+    let mut cumulative = 0.0;
+    let mut dims_needed = 0usize;
+
+    if total_variance > 0.0 {
+        for (i, (value, _)) in eigen_pairs.iter().enumerate() {
+            cumulative += *value;
+
+            if cumulative / total_variance >= target {
+                dims_needed = i + 1;
+                break;
+            }
+        }
+
+        if dims_needed == 0 {
+            dims_needed = N;
+        }
+    }
+
+    println!(
+        "{}",
+        magenta(format!(
+            "  Phylogenetic dimensions needed to explain at least 99% of variance: {}",
+            dims_needed
+        ))
+    );
+
     println!();
 
     // Stan data ----
