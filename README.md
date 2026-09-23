@@ -71,11 +71,11 @@ The results are written to:
   - `results/summary/phi.csv` gives the signed tail probabilities for $\Phi$
   - `results/summary/r.csv` gives the signed tail probabilities for $R$
  
-## Best practice
+## Tips and best practice
 
+- The model uses the host tree primarily as a measure of host relatedness. However, your input tree should be rooted, so it can be converted into a phylogenetic covariance matrix. In practice, this isn't always possible, and in my experience, it's fine to midpoint root.
 - The number of phylogenetic dimensions retained (`--k-dims`) should balance faithful representation of the tree-derived covariance structure against computational cost. The tool reports the cumulative variance explained by the retained dimensions in the terminal. For publishable analyses, we recommend retaining enough dimensions to explain at least 99% of the variance (this value is printed to the terminal when you run).
 - To that end, we also recommend `--warmup 5000 --samples 5000` as a minimum. You can inspect MCMC convergence using the files in `results/raw/`.
-
 
 ## Confessional 
 Rust is a new (and exciting) language for me. I used GitHub Copilot to help cobble together an initial CLI, but after several unassisted iterations, I am confident it's doing the job. If you spot any weirdness, please let me know. My preference is to run Stan models in R, as I did for the paper.
