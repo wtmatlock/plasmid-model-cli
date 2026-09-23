@@ -13,9 +13,9 @@ This tool runs the host-plasmid and plasmid-plasmid dynamics model in [Matlock a
 }
 ```
 
-All you need is a host chromosomal tree (as a `.nwk`), and a presence/absence matrix of plasmid groups (formatted like `test_data/test_matrix.csv`).
+All you need is a host chromosomal tree (as a `.nwk`), and a presence/absence matrix of plasmid groups (formatted like `test_data/test_matrix.csv`). Please refer to the manuscript for interpretation of the outputs.
 
-<ins>Of course, you could use any tree and any binary traits!</ins>
+> Of course, you could use any tree and any binary traits!
 
 ## Quick start with Docker
 
