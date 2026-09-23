@@ -1,6 +1,6 @@
 # plasmid-model-cli
 
-[![DOI](https://zenodo.org/badge/1381745987.svg)](https://doi.org/10.5281/zenodo.22914123) [![Docker](https://img.shields.io/docker/v/wtmatlock/plasmid-model-cli?sort=semver&label=Docker&logo=docker)](https://hub.docker.com/r/wtmatlock/plasmid-model-cli) [![License](https://img.shields.io/github/license/wtmatlock/plasmid-model-cli)](https://github.com/wtmatlock/plasmid-model-cli/blob/main/LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22914123.svg)](https://doi.org/10.5281/zenodo.22914123) [![Docker](https://img.shields.io/docker/v/wtmatlock/plasmid-model-cli?sort=semver&label=Docker&logo=docker)](https://hub.docker.com/r/wtmatlock/plasmid-model-cli) [![License](https://img.shields.io/github/license/wtmatlock/plasmid-model-cli)](https://github.com/wtmatlock/plasmid-model-cli/blob/main/LICENSE)
 
 This tool runs the host-plasmid and plasmid-plasmid dynamics model in [Matlock and MacLean (2026)](https://doi.org/10.64898/2026.02.19.706745). If you use the tool, please cite:
 
@@ -15,7 +15,9 @@ This tool runs the host-plasmid and plasmid-plasmid dynamics model in [Matlock a
 }
 ```
 
-All you need is a host chromosomal tree (as a `.nwk`), and a presence/absence matrix of plasmid groups (formatted like `test_data/test_matrix.csv`). Please refer to the paper for interpretation of the outputs.
+The tool (v. 1.0.0) is also archived on Zenodo [here](https://doi.org/10.5281/zenodo.22914123).
+
+To get started, all you need is a host chromosomal tree (as a `.nwk`), and a presence/absence matrix of plasmid groups (formatted like `test_data/test_matrix.csv`). Please refer to the paper for interpretation of the outputs.
 
 > Of course, you could use any tree and any binary traits!
 
