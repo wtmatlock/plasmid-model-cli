@@ -33,6 +33,35 @@ docker run --rm -it \
   --samples 1000
 ```
 
+The tool will provide information about your run:
+
+```
+Preparing data...
+
+  Tips: 100
+  Plasmids: 10
+  Retained phylogenetic dimensions: 10
+  Variance explained: 40.41%
+  Phylogenetic dimensions needed to explain at least 99% of variance: 86
+
+Running CmdStan sampling...
+
+  Model: /app/stan/model
+  Chains: 4
+  Warmup: 1000
+  Sampling: 1000
+  Total iterations: 2000
+  Seed: 123
+
+  [00:00:33] ######################################## 8000/8000 (100%) sampling complete                                                                                                                                                                                      
+
+Writing raw outputs...
+
+Writing model summaries...
+
+Completed successfully. Results saved to /work/results
+```
+
 The results are written to:
 
 - `results/inputs/`, which contains the input data converted to JSON
